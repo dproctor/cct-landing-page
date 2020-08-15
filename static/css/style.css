@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,700;0,800;1,800&display=swap');
+
+html,
+body {
+  height: 100%;
+  font-family: 'Sarabun';
+  color: #3C3C3C;
+}
+
+.navbar-nav > li > a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar {
+  min-height: 64px;
+  font-size: larger !important;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.bg1 {
+  background-color: #C6DCDB
+}
+
+.bg2 {
+  background-color: #F5ECE9;
+}
+
+.bg3 {
+  background-color: #DEE5E5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.contact-form {
+  max-width: 300pt;
+}
+
+.form-group.required label:after {
+  content:"*";
+  color:red;
+}

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>COVID Contact Tracing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css"
+    integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cosmo/bootstrap.min.css"
+    integrity="sha256-KgiMiZgZazlcRqcTnpKlQRyoi1Y79W1dsn5CtKFtwH0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css?rev=6">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-608030-15"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-608030-15');
+  </script>
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg1">
+    <a class="navbar-brand font-weight-bold" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="/">Home</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ml-auto">
+          <a class="nav-link font-weight-bold" href="/#approach">Approach</a>
+        </li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link font-weight-bold" href="/#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section id="teaser" class="py-5 bg1">
+    <div class="primary-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-4 font-weight-bold">COVID <br />Contact Tracing</h1>
+            <h3 class="h3 mt-4 mb-5">
+              A practical, privacy-first approach to scale contact tracing today.
+            </h3>
+            <div class="mb-5">
+
+              <button class="btn btn-secondary btn-large rounded mr-2 mb-2" data-toggle="modal"
+                data-target="#subscribeModal">Subscribe to our newsletter</button>
+              <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModal"
+                aria-hidden="true">
+                <form method="post"
+                  onsubmit="submitForm(event, 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScUyvSLFN8FLUMDqG-TEPHFGe0o73VhJefcCoDbP4fLY7ql3w/formResponse')"
+                  class="contact-form mx-auto needs-validation">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Subscribe to our newsletter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group required">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" name="entry.622871150"
+                            aria-describedby="emailHelp" placeholder="Your email address..." required />
+                        </div>
+                        <div class="alert alert-dismissible fade show text-center" role="alert">
+                          <span class="feedback"></span>
+                        </div>
+                        <div>
+                          <label class="form-check-label" for="nlpp">By clicking "Subscribe" I agree to COVID Contact Tracing's <a href="/docs/privacy_policy.md">Privacy Policy</a>.</label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary rounded">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-large rounded mb-2" data-toggle="modal"
+                data-target="#requestDemoModal">Request a demo</button>
+              <div class="modal fade" id="requestDemoModal" tabindex="-1" role="dialog"
+                aria-labelledby="requestDemoModal" aria-hidden="true">
+                <form method="post"
+                  onsubmit="submitForm(event, 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSe03F2PgHuAGC2de4WfSW8JISSAqpgmZSsGwYqnmF0DjRmO9A/formResponse')"
+                  class="contact-form mx-auto needs-validation">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Request a demo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group required">
+                          <label for="name" required>Name</label>
+                          <input type="text" class="form-control" id="name" name="entry.538771034"
+                            placeholder="Your name..." required />
+                        </div>
+                        <div class="form-group required">
+                          <label for="company" required>Company / Organization</label>
+                          <input type="text" class="form-control" id="company" name="entry.1205176893"
+                            placeholder="Your company name..." required />
+                        </div>
+                        <div class="form-group required">
+                          <label for="title" required>Title</label>
+                          <input type="text" class="form-control" id="title" name="entry.109685995"
+                            placeholder="Your title..." required />
+                        </div>
+                        <div class="form-group required">
+                          <label for="email" required>Email address</label>
+                          <input type="email" class="form-control" id="email" name="entry.1809402955"
+                            placeholder="Your email address..." required />
+                        </div>
+                        <div class="form-group required">
+                          <label for="phone" required>Phone</label>
+                          <input type="tel" class="form-control" id="phone" name="entry.268124103"
+                            placeholder="Your phone number..." required />
+                        </div>
+                        <div class="alert alert-dismissible fade show text-center" role="alert">
+                          <span class="feedback"></span>
+                        </div>
+                        <div>
+                          <label class="form-check-label" for="depp">By clicking "Submit" I agree to COVID Contact Tracing's <a href="/docs/privacy_policy.md">Privacy Policy</a>.</label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary rounded">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-5 d-flex justify-content-center">
+            <img src="images/Artboard_25_2.svg" class="img-fluid mx-n5 my-n5" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center pt-3 pb-5">
+          <h2 class="pt-2">We're empowering individuals to...</h2>
+        </div>
+        <div class="col-lg-5 offset-lg-1 py-3 d-flex">
+          <img src="images/Artboard_27.svg" height="100px" class="pb-3 mr-1">
+          <p class="lead">Take <span class="font-weight-bold">control</span> of their personal data that Big Tech
+            companies have already collected.</p>
+        </div>
+        <div class="col-lg-5 py-3 d-flex">
+          <img src="images/Artboard_28.svg" height="100px" class="pb-3 mr-1">
+          <p class="lead"><span class="font-weight-bold">Collaborate</span> with healthcare providers and public health
+            agencies to beat COVID-19.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach py-5 bg3">
+    <a name="approach"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="pt-2 pb-4">Our Approach</h1>
+          <p class="lead">
+            Our mission is to empower individuals and organizations fighting COVID-19 on the front-lines with tools that
+            enable them to do their jobs faster, safer and more effectively.
+          </p>
+          <p class="lead">
+            We have built technology that empowers individuals to take their personal, fine-grain location data that Big
+            Tech companies have already collected, and contribute that directly to the first-responders,
+            epidemiologists, and doctors that desperately need it. Other proposals rely on untested, unready, and
+            unrealistic technologies that don’t match the urgency of the moment.
+          </p>
+          <p class="lead">
+            Our technology puts individuals in control. We believe that with the right tools, average Americans will
+            eagerly work hand in hand with their trusted doctors and local officials to beat COVID-19.
+          </p>
+          <p class="lead">
+            The location histories of many Americans are already collected and put to use targeting advertisements and
+            helping us navigate the world; it's time to recruit that data in the defining crisis of our time.
+          </p>
+          <p class="lead">
+            The technology and data required to power this approach exist and are deployable today. We should not wait
+            on the development, deployment, and wide-spread adoption of new technologies and data collection methods.
+          </p>
+          <p class="lead">
+            Let’s do this. Together.
+          </p>
+          <img src="images/signature.png" class="p-1">
+          <p class="lead">
+            Devon Proctor<br />
+            Chief Executive & Technology Officer
+          </p>
+        </div>
+
+        <div class="col-lg-6 p-4 my-auto">
+          <img src="images/quotation.svg" class="px-4 pb-3">
+          <h1 class="pl-4 font-italic">
+            The technology and data required to power this approach exist and are deployable today
+          </h1>
+          <div class="text-center py-4">
+            <a href="files/CCT_whitepaper.pdf" class="btn btn-outline-secondary rounded">Download whitepaper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center pt-2 pb-5">How it works</h2>
+        </div>
+
+        <div class="col-lg-3 py-3">
+          <img src="images/num1.svg" height="80px" class="pb-3">
+          <div>
+            <h2>Partner</h2>
+            <p class="lead">
+              We partner with healthcare providers who white-label and deploy our technology. Our partners own and
+              control patient data and interactions, and apply strong privacy controls to protect personal data.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 py-3">
+          <img src="images/num2.svg" height="80px" class="pb-3">
+          <div>
+            <h2>Share</h2>
+            <p class="lead">
+              When a patient tests positive for COVID-19, our partners invite them to safely and securely export their
+              location history from Big Tech companies and share it with the partner organization. Our one-touch data
+              intake tool makes the process easy for individuals and their doctors.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 py-3">
+          <img src="images/num3.svg" height="80px" class="pb-3">
+          <div>
+            <h2>Build</h2>
+            <p class="lead">
+              We index that location data, which creates a corpus of times and places where COVID-19 positive patients
+              have been. We employ state-of-the-art methods to minimize the amount of personal information that is
+              stored while still enabling critical capabilities for COVID-19 responders.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 py-3">
+          <img src="images/num4.svg" height="80px" class="pb-3">
+          <div>
+            <h2>Evaluate</h2>
+            <p class="lead">
+              Individuals can securely — and without contributing any data — compare their own location history against
+              the COVID-19 exposure reference set. Applying machine learning techniques, we generate exposure risk
+              scores for individuals and locations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact pt-5 pb-5 bg2">
+    <a name="contact"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <h1 class="text-center pt-2 pb-4">Contact</h1>
+          <p class="lead text-center">
+            <span class="d-block px-5 mx-auto" style="max-width: 700px;">We are a group of experienced Silicon Valley
+              engineers, designers, lawyers and businesspeople. For any inquiries please reach out to us at:</span>
+            <a href="mailto:info@covidcontacttracing.com">info@covidcontacttracing.com</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="page-footer font-small p-5 bg1">
+    <div class="row">
+        <div class="col-md-6">
+            <a class="text-muted" href="/docs/privacy_policy.md">Privacy Policy</a>
+        </div>
+        <div class="footer-copyright text-right col-md-6">
+            <span class="d-block text-muted">COVID Contact Tracing</span>
+            <span class="d-block text-muted">San Francisco, CA</span>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"
+    integrity="sha256-oKpAiD7qu3bXrWRVxnXLV1h7FlNV+p5YJBIr8LOCFYw=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
